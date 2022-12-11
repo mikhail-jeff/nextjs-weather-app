@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React from 'react';
 
 const Weather = ({ data }) => {
 	return (
@@ -14,7 +13,7 @@ const Weather = ({ data }) => {
 					/>
 					<p className='text-2xl'>{data.weather[0].main}</p>
 				</div>
-				<p className='text-8xl'>{data.main.temp.toFixed(0)}&#176;</p>
+				<p className='text-7xl'>{data.main.temp.toFixed(0)}&#176;</p>
 			</div>
 			{/* BOTTOM */}
 			<div className='bg-black/30 relative p-8 rounded-md my-20'>
